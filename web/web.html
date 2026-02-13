@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="web.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="web.js"></script>
+<body>
+    <header>
+        <div class="nav">
+            <div class="menu">
+                <img src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="mysidenav">
+                <a href="#home">home</a>
+                <a href="#product">product</a>
+                <a href="#about">about</a>
+                <a href="#contact">contact</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="search Product...">
+            </div>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping" id="cart-icon"><span id="cart-count">0</span></i>
+            </a>
+        </div>
+    </header>
+    <section id="home">
+        <div class="home">
+            <div class="main">
+                <h1>Start Brands <font color="#0f52ba">Perfumes </font>Trends</h1><br>
+                <p>On the hand,we denounce with rightness indignation and dislike mens</p><br>
+                <button>Explorer Now</button>
+            </div>
+            <img src="https://thumbs.dreamstime.com/b/woman-enjoy-fragrance-her-perfume-12729057.jpg" alt="">
+        </div>
+    </section>
+    <section id="product">
+       <h1>The Product Collection</h1>
+        <div class="wrapper">
+             <div class="product-container" id="product-list">
+                <div class="product" data-name="beardo godfather">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTN6iyCRGEeMTR6bTbHoKtdiaf0Hak6vjGenwzADhbmT6V4FR3JR35QXOxPYkPsxjCppaIbo3nT2wnv-Bkswj3D7uEhft4mA9J6mXG94elTPxHBcqZVFUP_"class="product-img" alt="product" /><hr>
+                    <div class="product-info">
+                        <h2 class="product-title">Beardo Godfather <br>Perfume Edp</h2><br>
+                        <p class="product-price">₹320</p>
+                        <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product" data-name="skinn by titan">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT5XqbD70I1aemq_w4s3QIuA18j3B_lnEwtbElBRy9ewXPZL_Ng2sqfRHUDuUQ70C1gskFQXS3cORNTQ44QqWutTHnZLG86xO7nvAm4u4fMM-QhFxdUGMh6YQrfH9oaFvho-MpBwQ&usqp=CAc" class="product-img" alt="product"><hr>
+                     <div class="product-info">
+                        <h2 class="product-title">Skinn BY Titan <br>Sheer For Women</h2><br>
+                        <p class="product-price">₹550.00</p>
+                        <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product" data-name="red home fresh">
+                    <img src="https://m.media-amazon.com/images/I/61SWu-VYHpL.jpg" class="product-img" alt="product"><hr>
+                    <div class="product-info">
+                         <h2 class="product-title">Red Homme Fresh Aqua <br>Lasting Perfume for Men</h2><br>
+                         <p class="product-price">₹406.00</p>
+                        <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                    </div>
+                </div><br><br>
+                <div class="product">
+                    <img src="https://m.media-amazon.com/images/I/31anO-iV2iL._SY300_SX300_QL70_FMwebp_.jpg" class="product-img" alt="product"><hr>
+                    <div class="product-info">
+                        <h2 class="product-title">Bella Vita Luxury <br> Lasting Unisex EDP</h2><br>
+                        <p class="product-price">₹565.00</p>
+                        <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product" data-name="bella vita">
+                    <img src="https://m.media-amazon.com/images/I/41tkegeABZL._SY300_SX300_QL70_FMwebp_.jpg" class="product-img" alt="product"><hr>
+                    <div class="product-info">
+                        <h2 class="product-title">Bella Vita 100ml <br>Long Lasting Perfume</h2><br>
+                        <p class="product-price">₹549.00</p>
+                         <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="product" data-name="bella vita long">
+                    <img src="https://m.media-amazon.com/images/I/51hJGmzG9PL._SY355_.jpg" class="product-img" alt="product"><hr>
+                    <div class="product-info">
+                        <h2 class="product-title"> Bella Vita Long <br>Lasting Perfume for Man</h2><br>
+                        <p class="product-price">₹485.00</p>
+                        <a class="add-to-cart" onclick="addToCart(this.parentElement.parentElement)">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div><hr>
+    </section>
+    <section id="about">
+        <div class="container">
+            <img src="data:image/png;base64,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" alt="">
+            <div class="about">
+                <h1>About perfumes online services</h1><br>
+                <p>perfume, fragrant product that results from the artful blending of certain odoriferous
+                substances in appropriate proportions. The word is derived from the Latin per fumum,
+                meaning “through smoke.” The art of perfumery was apparently known to the ancient
+                Chinese, Hindus, Egyptians, Israelites, Carthaginians, Arabs, Greeks, and Romans.
+                References to perfumery materials and even perfume formulas are found in the Bible.</p>
+            </div>
+        </div><hr>
+    </section>
+    <section id="contact">
+        <div class="contact">
+            <div class="cont">
+                <img src="https://r2imghtlak.mmtcdn.com/r2-mmt-htl-image/201908311450119166_map_image.jpg"
+                    alt="">
+            </div>
+            <div class="contus">
+                <h2>react us</h2>
+                <form action="">
+                    <label>Name:</label>
+                    <input type="text" placeholder="Enter Your Name"><br><br>
+                    <label>Email:</label>
+                    <input type="text" placeholder="Enter your Email"><br><br>
+                    <label>Phone:</label>
+                    <input type="text" placeholder="Enter your Phone"><br><br>
+                    <label>Message:</label>
+                    <textarea name="message" id="message" placeholder="your message" column="10"></textarea><br>
+                    <button type="submit">Your Message</button>
+                </form>
+            </div>
+        </div>
+    </section><hr>
+    <div class="footer">
+        <div class="part">
+            <img src="data:image/png;base64,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" alt="">
+        </div>
+        <div class="part">
+            Address:4/131 gst road chennai,<br>
+            pincode:600001,<br>
+            phone:7200453349.
+        </div>
+        <div class="part">
+            <h2>party wear collection</h2>
+            <p>Service </p>
+            <p>Customer</p>
+            <p>Satisfaction</p>
+        </div>
+        <div class="part">
+            <p>you Tube</p>
+            <p>Facebook</p>
+            <p>Instagram</p>
+        </div>
+    </div><hr>
+     <div class="footer1">&#169; All right reserved.The brand perfumes online.</div>           
+</body>
+</html>
